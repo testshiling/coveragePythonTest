@@ -1,0 +1,7 @@
+[run]
+plugins = django_coverage_plugin
+omit = *.sqlite3
+[report]
+exclude_lines =
+    raise BaseException
+    def noNeed
