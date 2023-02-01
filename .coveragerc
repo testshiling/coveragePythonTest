@@ -1,7 +1,10 @@
 [run]
+omit = *migrations*, *__init__*, coveragePythonTest/*,manage.py
 plugins = django_coverage_plugin
-omit = *.sqlite3
 [report]
 exclude_lines =
     raise BaseException
     def noNeed
+
+[django_coverage_plugin]
+template_extensions =html, txt, tex, email

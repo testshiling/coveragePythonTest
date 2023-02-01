@@ -30,6 +30,7 @@ def createOrder(request):
             'msg': "amount"
         })
     else:
+        print("走到了")
         return Response({
             "status_code": 200,
             'msg': "订单："+str(data["orderId"])+ "，创建成功"
