@@ -1,5 +1,7 @@
 [run]
-omit = *migrations*, *__init__*, coveragePythonTest/*,manage.py
+branch = True
+parallel = True
+omit = *migrations*, *__init__*, coveragePythonTest/*,manage.py,*/usr/*
 plugins = django_coverage_plugin
 [report]
 exclude_lines =
