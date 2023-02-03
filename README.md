@@ -12,6 +12,7 @@ body={
     "orderId":1,
     "amount":2
 }
+method=POST
 
 4.在项目根目录下， CONTROL+C关闭项目进程，收集覆盖率
 
