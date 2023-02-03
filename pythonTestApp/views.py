@@ -11,23 +11,23 @@ def createOrder(request):
     if "orderId" not in data:
         return Response({
             "status_code": 400,
-            'msg': "orderId"
+            'msg': "orderId必传"
         })
     elif "amount" not in data:
         return Response({
             "status_code": 400,
-            'msg': "amount"
+            'msg': "amount必传"
         })
     elif data["orderId"] == "" or data["orderId"] == " ":
         print(data)
         return Response({
             "status_code": 400,
-            'msg': "orderId"
+            'msg': "orderId不能为空"
         })
     elif data["amount"] == "" or data["amount"] == " ":
         return Response({
             "status_code": 400,
-            'msg': "amount"
+            'msg': "amount不能为空"
         })
     else:
         print("走到了")

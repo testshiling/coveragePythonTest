@@ -2,11 +2,7 @@
 branch = True
 parallel = True
 omit = *migrations*, *__init__*, coveragePythonTest/*,manage.py,*/usr/*
-plugins = django_coverage_plugin
 [report]
 exclude_lines =
     raise BaseException
     def noNeed
-
-[django_coverage_plugin]
-template_extensions =html, txt, tex, email
